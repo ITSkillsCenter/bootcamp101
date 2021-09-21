@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    width: 100%;
+    background-color: #f0f2f5;
+}
+
+form{
+    background-color: #ffff;
+    position: absolute;
+    width: 320px;
+    height: 270px;
+    padding: 10px 5px 20px 5px;
+    margin: -15vh 700px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px -7px;
+}
+
+input[type='text'], input[type='password']{
+    display: block;
+    background-color: #ffff;
+    margin: auto;
+    border: 1.5px solid rgb(200, 200, 200);
+    width: 200px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-align: left;
+    color: black;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+}
+
+button{
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    margin: auto;
+    width: 275px;
+    display: block;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fpass{
+    display: block;
+    width: 200px;
+    margin: auto;
+    color: #1877f2;
+    padding-left: 80px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+}
+
+.line{
+    border-top: 3px solid #222;
+    opacity: 0.2;
+}
+
+.cacc{
+    width: 180px;
+    font-size: 14px;
+    background-color: #42b72a;
+    text-align: center;
+}
+
+.sublink h3{
+    width: 270px;
+    position: relative;
+    color: black;
+    font-family: 'Segoe UI';
+    padding: 130px 750px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sublink h3 a{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.fcontainer{
+    width: 350px;
+    margin-left: 300px;
+    margin-top: 30vh;
+    font-family: 'Segoe UI';
+}
+
+.fcontainer img{
+    width: 160px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 600;
+    word-spacing: 3px;
+}

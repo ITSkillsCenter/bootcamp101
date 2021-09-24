@@ -1,0 +1,160 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    font-size: 14px;
+}
+
+li {
+    display: inline-block;
+    margin: 8px 10px;
+}
+
+span {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: darkgreen;
+    color: white;
+}
+
+span:hover {
+    border: 3px solid whitesmoke;
+    margin-right: -3px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#content {
+    text-align: center;
+    margin: 9.5% auto;
+}
+
+#searchbox {
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    height: 45px;
+    width: 35%;
+    margin: 25px auto;
+}
+
+#searchbox .left {
+    display: flex;
+    justify-content: start;
+    color: grey;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#searchbox .right {
+    display: flex;
+    justify-content: end;
+    color: #4285F4;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    margin-top: -17px;
+}
+
+#boxes {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 0 auto;
+}
+
+#boxes p {
+    color: black;
+    background-color: #F8F9FA;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#languages {
+    display: flex;
+    justify-content: center;
+}
+
+#languages li {
+    margin: 10px 4px;
+}
+
+#languages ul a {
+    color: darkblue;
+}
+
+#footer {
+    background-color: #f2f2f2;
+    margin-top: 14.5%;
+    width: 100%;
+}
+
+#footer .nigeria {
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #70757A;
+}
+
+#footer .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    padding-bottom: 15px;
+}
+
+#footer .bottom-footer .left {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#footer .bottom-footer .left a {
+    margin: 0 10px;
+}
+
+#footer .bottom-footer .middle {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -130px;
+    padding-top: 15px;
+}
+
+#footer .bottom-footer .right {
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+#footer .bottom-footer .right a {
+    margin: 0 10px;
+}
+
+#footer .bottom-footer .middle img {
+    height: 18px;
+    padding-right: 5px;
+}
+
+#footer a {
+    color: #70757A;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

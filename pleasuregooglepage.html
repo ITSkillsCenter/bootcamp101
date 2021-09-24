@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            min-width: 400px;
+            display: block;
+            background: #fff;
+            font-size: 14px;
+            font-family: arial,sans-serif;
+            color: #222;
+        }
+        .cover{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .preM{
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            height: 60px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+        .preMN{
+            display: inline-block;
+            flex-grow: 1;
+        }
+        .mymenu{
+            text-align: right;
+            padding-top: 0;
+            margin: 0;
+            align-items: center;
+            min-height: 3px;
+            min-width: initial;
+            float: right;
+            justify-content: flex-end;
+            font-style: normal;
+            font-size: 13px;
+            font-family: Roboto, RobotoDraft, Arial, sans-serif;
+            z-index: 986;
+            min-width: auto;
+            display: block;
+            
+        }
+        .gmail{
+            color: rgba(0,0,0,0.87);
+            display: inline-block;
+            line-height: 24px;
+            vertical-align: middle;
+            text-decoration: none;
+            cursor: pointer;
+            padding-left: 15px;
+        }
+        .Images{
+            display: inline-block;
+            line-height: 24px;
+            vertical-align: middle;
+            color: rgba(0,0,0,0.87);
+            text-decoration: none;
+            cursor: pointer;
+            padding-left: 15px;
+            flex: 0 0 auto;
+        }
+        .google-menu{
+            opacity: 1;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 2px;
+            line-height: normal;
+            position: relative;
+            transition-property: box-shadow;
+            transition-duration: 250ms;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            overflow: hidden;
+            padding: 0 8px 0 30px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+            justify-content: flex-end;
+            z-index: 986;
+            background-position-x: -64px;
+            background-position-y: -29px;
+        }
+        .sign-button{
+            cursor: pointer;
+            color: #fff;
+            background-color: #1a73e8;
+            margin-left: 8px;
+            margin-right: 8px;
+            border-top-color: transparent;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-right-color: transparent;
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-bottom-color: transparent;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: transparent;
+            border-left-style: solid;
+            border-left-width: 1px;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 16px;
+            min-width: 96px;
+            padding: 9px 23px 9px 23px;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+        .logopic{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 150px;
+            max-height: 290px;
+            height: calc(100% - 560px);
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+        .Glogo{
+            max-height: 230px;
+            text-align: center;
+            height: 100%;
+            margin-top: auto;
+
+        }
+        .mybody{
+            padding: 20px;
+            max-height: 160px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+        .comp{
+            position:relative;
+            margin: 0 auto;
+            padding-top: 6px;
+        }
+        .form{
+            display: block;
+            margin-top: 0em;
+        }
+        .formcontrol{
+            width: auto;
+            max-width: 584px;
+            position: relative;
+            margin: 0 auto;
+            padding-top: 6px;
+        }
+        .sd{
+            width: auto;
+            max-width: 584px;
+            background: #fff;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            z-index: 3;
+            height: 44px;
+            margin: 0 auto;
+        }
+        .se{
+            flex: 1;
+            display: flex;
+            padding: 5px 8px 0 16px;
+            padding-left: 14px;
+        }
+        .sf{
+            display: flex;
+            align-items: center;
+            padding-right: 13px;
+            margin-top: -5px;
+        }
+        .sg{
+            margin: auto;
+            display: block;
+        }
+        .sh{
+            margin-top: 3px;
+            color: #9aa0a6;
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            fill: currentColor;
+            line-height: 24px;
+            position: relative;
+        }
+        .ta{
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+        .tb{
+            color: transparent;
+            flex: 100%;
+            white-space: pre;
+            height: 34px;
+        }
+        .tc{
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding: 0;
+            color: rgba(0,0,0,.87);
+            word-wrap: break-word;
+            outline: none;
+            display: flex;
+            flex: 100%;
+            margin-top: -37px;
+            height: 34px;
+            font-size: 16px;
+            font-family: arial,sans-serif;
+        }
+        .va{
+            display: flex;
+            flex: 0 0 auto;
+            margin-top: -5px;
+            align-items: stretch;
+            flex-direction: row;
+        }
+        .r1{
+            flex: 1 0 auto;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            border: 0;
+            background: transparent;
+            outline: none;
+            padding: 0 8px;
+            width: 24px;
+            line-height: 44px;
+        }
+        .r2{
+            height: 24px;
+            width: 24px;
+            vertical-align: middle;
+            overflow: hidden;
+            cursor: pointer;
+            line-height: 44px;
+        }
+        .sbuttons{
+            height: 70px;
+            padding-top: 18px;
+            top: 53px;
+            z-index: 0;
+            display: block;
+        }
+        .GS-FL{
+            display: block;
+            text-align: center;
+        }
+        .G-S{
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .F-L{
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .googlelang{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            flex-grow: 5;
+            margin-bottom: 175px;
+        }
+        .googleoffers{
+            font-size: small;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .ng-lang{
+            color: #3c4043;
+            display: inline-block;
+            line-height: 28px;
+            display: block;
+        }
+        .ng-lang a{
+            text-decoration: none;
+        }
+        .myfooter{
+            background-color: rgb(242, 242, 242);
+            flex-shrink: 0;
+            box-sizing: border-box;
+            align-items: flex-end;
+            margin-bottom: 0;
+            
+            
+        }
+        .nigeria{
+            padding: 15px 30px;
+            border-bottom: 1px solid #dadce0;
+            font-size: 15px;
+            color: rgba(0,0,0,.54);
+        }
+        .bline{
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+        .partA{
+            justify-content: flex-start;
+            min-width: 30%;
+            order: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .about{
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .advertising{
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .business{
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none
+        }
+        .s-works{
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none
+        }
+        .partB{
+            order: 2;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .partB1{
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none 
+        }
+        .part-img{
+            height: 14px;
+            margin-right: 6px;  
+            color: #70757a;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .carbon-N{
+            vertical-align: top;
+            color: #70757a;
+            text-decoration: none;
+        }
+        .partC{
+            justify-content: flex-end;
+            min-width: 30%;
+            order: 3;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .partC1{
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .partC2{
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .partD{
+            position: relative;
+            display: block;
+        }
+        .partD1{
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            border: none;
+            background: none;
+            margin: 0;
+             
+        }
+        .partD2{
+            bottom: 46px;
+            right: 0px;
+            display: none;
+            position: absolute;
+            list-style: none;
+            background: #fff;
+            border: 1px solid #70757a;
+        }
+        h1, li, ol, ul, button{
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            appearance: auto;
+            text-rendering: auto;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            align-items: flex-start;
+            box-sizing: border-box;
+            font: 400 13.3333px Arial;
+            border-radius: 2px;
+
+        }
+        .last{
+            height: 0;
+            overflow: hidden;
+        }
+        .lastA{
+            z-index: 1001;
+            position: absolute;
+            top: -1000px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="preM">
+            <div class="preMN">
+                <div class="mymenu">
+                    <a class="gmail" href="https://mail.google.com/mail/&ogbl">Gmail</a> 
+                    <a class="Images" href="https://www.google.com.ng/imghp?hl=en&ogbl" target="_top">Images</a>
+                    <a href="https://www.google.com.ng/intl/en/about/products"><img src="/PleasureImages/Google menu.jpeg" alt="google menu" 
+                        class="google-menu" width="15px" height="15px"></a>
+                    <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"><button class="sign-button">Sign in</button>
+                    </a> 
+                </div>
+            </div>
+        </div>
+        <div class="logopic">
+            <div class="Glogo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+            </div>
+        </div>
+        <div class="mybody">
+            <div class="comp">
+                <div class="form">
+                    <form action="/search" method="GET" role="search">
+                        <div class="formtree">
+                            <div class="formcontrol">
+                                <div class="sd">
+                                    <div class="se">
+                                        <div class="sf">
+                                            <div class="sg">
+                                                <span class="sh">
+                                                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="ta">
+                                            <div class="tb">
+                                                <input class="tc" type="text" title="Search" label="Search">
+                                            </div>
+                                        </div>
+                                        <div class="va">
+                                            <div class="r1" role="button">
+                                            <svg class="r2">
+                                                <path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path>
+                                                <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+                                                <path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path>
+                                                <path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path>
+                                            </svg>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sbuttons">
+                                    <div class="GS-FL">
+                                        <input class="G-S" value="Google Search" type="submit">
+                                        <input class="F-L" value="I'm Feeling Lucky" type="submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="googlelang">
+                <div class="googleoffers">
+                    <div class="ng-lang">
+                        Google offered in:  <a href="https://www.google.com/setprefs?sig=0_gHAT-RnvNBXVzMa-1MutYh0FYxg%3D&amp;hl=ha&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjOksrXmJDyAhXbREEAHc5nD0QQ2ZgBCA8">Hausa</a>    
+                        <a href="https://www.google.com/setprefs?sig=0_gHAT-RnvNBXVzMa-1MutYh0FYxg%3D&amp;hl=ig&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjOksrXmJDyAhXbREEAHc5nD0QQ2ZgBCBA">Igbo</a>    
+                        <a href="https://www.google.com/setprefs?sig=0_gHAT-RnvNBXVzMa-1MutYh0FYxg%3D&amp;hl=yo&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjOksrXmJDyAhXbREEAHc5nD0QQ2ZgBCBE">Èdè Yorùbá</a>    
+                        <a href="https://www.google.com/setprefs?sig=0_gHAT-RnvNBXVzMa-1MutYh0FYxg%3D&amp;hl=pcm&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjOksrXmJDyAhXbREEAHc5nD0QQ2ZgBCBI">Nigerian Pidgin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="myfooter">
+                <div class="nigeria">Nigeria</div>
+                <div class="bline">
+                    <div class="partA">
+                        <a class="about" href="https://about.google/?utm_source=google-NG&amp;utm_medium=referral&amp;utm_campaign=hp-footer&amp;fg=1">About</a>
+                        <a class="advertising" href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1">Advertising</a>
+                        <a class="business" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1">Business</a>
+                        <a class="s-works" href="https://google.com/search/howsearchworks/?fg=1">  How Search works </a>
+                    </div>
+                    <div class="partB">
+                        <a class="partB1" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" 
+                            class="part-img" alt="" data-atf="1" data-frt="0">
+                            <span class="carbon-N">Carbon neutral since 2007</span>
+                        </a>
+                    </div>
+                    <div class="partC">
+                        <a class="partC1" href="https://policies.google.com/privacy?hl=en-NG&amp;fg=1">Privacy</a>
+                        <a class="partC2" href="https://policies.google.com/terms?hl=en-NG&amp;fg=1">Terms</a>
+                        <div class="partD">
+                            <button class="partD1">Settings
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

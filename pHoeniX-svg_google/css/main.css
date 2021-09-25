@@ -113,17 +113,10 @@ textarea {
 .btn:focus {
   outline: none;
 }
-.btn-block {
-  width: 100%;
-  padding: 1.5em 2em;
-}
 .btn-primary {
   background-color: var(--clr-el-200);
 }
-.btn-secondary {
-  border-radius: var(--br);
-  background-color: var(--clr-el-300);
-}
+
 @media (min-width: 37.5em) and (max-width: 56.24em) {
   html {
     font-size: 56.25%;

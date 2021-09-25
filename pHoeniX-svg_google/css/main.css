@@ -1,0 +1,141 @@
+/*!Theme Name:
+Theme URI: https://phoenix-svg.github.io/FEM__signup-form
+Repository: https://github.com/pHoeniX-svg/FEM__signup-form
+Description: Google Homepage Clone
+Author's Name: Chukwuzube Samuel
+Author's Moniker: pHoeniX-svg
+Version: 01
+*/
+
+:root {
+  --clr-bg-100: #fafbff;
+  --clr-txt-100: #202124;
+  --clr-link: #1a0dab; /* #8ab4f8 */
+  --ff-primary: Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+  text-rendering: optimizeSpeed;
+}
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--clr-bg-100);
+  color: var(--clr-txt-100);
+  font-family: var(--ff-primary);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Inherit fonts for inputs and buttons */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  outline: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ////////////////////////////////////////////
+// COMPONENTS: BUTTONS
+*/
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  color: currentColor;
+  font: inherit;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-block {
+  width: 100%;
+  padding: 1.5em 2em;
+}
+.btn-primary {
+  background-color: var(--clr-el-200);
+}
+.btn-secondary {
+  border-radius: var(--br);
+  background-color: var(--clr-el-300);
+}
+@media (min-width: 37.5em) and (max-width: 56.24em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (min-width: 56.25em) and (max-width: 112.49em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}

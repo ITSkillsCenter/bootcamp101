@@ -8,9 +8,9 @@ Version: 01
 */
 
 :root {
-  --clr-bg-100: #fafbff;
-  --clr-txt-100: #202124;
-  --clr-link: #1a0dab; /* #8ab4f8 */
+  --clr-bg-100: hsl(228, 100%, 99%);
+  --clr-txt-100: hsl(225, 6%, 13%);
+  --clr-link: hsl(245, 86%, 36%); /* #8ab4f8 */
   --ff-primary: Arial, Helvetica, sans-serif;
 }
 
@@ -64,7 +64,8 @@ a:visited {
   color: currentColor;
 }
 a:hover,
-a:focus {
+a:focus,
+a:active {
   text-decoration: underline;
 }
 
@@ -115,6 +116,61 @@ textarea {
 }
 .btn-primary {
   background-color: var(--clr-el-200);
+}
+a.btn-signin {
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: hsla(233, 96%, 53%, 0.6);
+  text-decoration: none;
+}
+a.btn-signin:hover,
+a.btn-signin:active {
+  transform: scale(0.9);
+}
+/*========= HEADER STYLES =========*/
+.google-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+/* NAV */
+.google-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-size: 1.3rem;
+}
+.google-nav__links {
+  display: flex;
+  align-items: center;
+}
+.google-nav__link {
+  padding: 0.4rem 0.6rem;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+}
+.dropdown a:hover {
+  border-radius: 50%;
+  background-color: hsla(213, 5%, 39%, 0.1);
+}
+.dropdown-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: hsl(213, 5%, 39%);
+  opacity: 1;
+}
+
+.showcase {
+  align-self: center;
+  justify-self: flex-end;
+  margin-top: 17.9rem;
 }
 
 @media (min-width: 37.5em) and (max-width: 56.24em) {

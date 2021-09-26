@@ -1,0 +1,266 @@
+<html>
+    <head>
+        
+        <style>
+    *
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+            div#header
+                    {
+                    text-align: right;
+                    vertical-align: middle;
+                    padding: 1 10px;
+                    }
+            #pcs img{
+                    border-radius: 53%;
+                    width: 28px;
+                    }
+            ul      {
+                    list-style-type: none;
+                    }
+            li {
+                    display: inline-block;
+                    padding: 0px 8px;
+                    padding-bottom: 6px;
+                    }
+        
+            #header a {
+                    text-decoration: none;
+                    }
+            #header a:hover{
+                        text-decoration:underline;
+                    }
+          #header img{
+                        border: 0.1px solid transparent;
+                        cursor: pointer;
+                        color: darkgray;
+                    }
+            #header img:hover{
+                        border: 0.1px solid gray;
+                        color: darkgray;
+                        box-shadow: darkgray;
+                    }
+                    
+                
+            #logo img { 
+                     width: 259px;  
+                    }
+            div#content {
+                        width: 70%;
+                        text-align: center;
+                        margin: 0px auto;
+                        }
+            #searchBox {
+                         border: 1px solid #ece9e9;
+                         border-radius: 50px;
+                         box-shadow: 0px 10px 40px -27px;
+                         width: 60%;
+                         height: 45px;
+                         padding: 0px 50px;
+                         outline: none;
+                         
+                        }
+        
+            img#mic {
+                    
+                        position: absolute;
+                        width: 14px;
+                        right: 213px;
+                        top: 14px;
+                        }
+            img#srch {
+                        position: absolute;
+                        left: 213px;
+                        width: 16px;
+                        top: 16px;
+                        color: #dadada;
+                        }
+           #button-box {
+                        text-align: center;
+                        }
+            button {
+                        background: #06050508;
+                        border-radius: 4px;
+                        padding: 12px 20px;
+                        font-size: 14px;
+                        margin: 0 5px;
+                        color: rgb(123 122 122);
+                        outline: none;
+                        border: 1px solid transparent;
+                        cursor: pointer;
+                        text-align: center;
+                        }
+            button:hover{
+                            border:0.01px solid gray;
+                        }
+
+                        
+            #languages {
+                        text-align: center;
+                        
+                        }
+            #languages li a {
+                        font-size: 14px;
+                        text-decoration: none;
+                        }
+            #languages li a:hover{
+                        text-decoration: underline;
+                        }
+                       
+            
+            div#footer{
+                background: #f9f9f5;
+                width: 100%;
+                height: 45px;
+                padding: 1px 0px;
+                border-bottom: solid 1px #e8e7e7;
+                position: absolute;
+                bottom: 0;
+}
+            
+            #footer li {
+                        font-size: 17px;
+                        color: gray;
+                        }
+           div#left       {
+                        display: inline-block;
+                        justify-content: left;
+                        }
+              
+            div#mid        {
+                        display: inline-block;
+                        justify-content: center;
+                        }
+            #mid img {
+                        width: 23px;
+                        top: 0px;
+                        margin-bottom: -6px;
+                        }
+                    
+            div#right      {
+                        display: inline-block;
+                        text-align: right;
+                        vertical-align: middle;
+                        padding: 1 10px;
+                        }
+      
+            div#footer-top {
+                background: #f9f9f5;
+                width: 100%;
+                height: 45px;
+                border-bottom: solid 1px #e6e3e3;
+                padding: 1px 0px;
+                        }
+            div#country    {
+                        padding: 0px px;
+                        background: #f9f9f5;
+                        width: 100%;
+                        height: 10px;
+                        }
+            p#country{
+                        padding: 0 40px;
+                        color: gray;
+                    }
+            div#footer-bottom{
+                        background: #f9f9f5;
+                        width: 100%;
+                        height: 60px;
+                        text-align: center;
+                        }
+            #footer-bottom li a{
+                        text-decoration: none;
+                        }
+            #footer-bottom li a:hover{
+                        text-decoration: underline;
+                        }
+          #footer-bottom li a {
+                        color: rgb(160, 158, 158);
+                        }
+
+        </style> 
+
+    </head>
+
+    <body>
+	    <div id="wrapper">
+		    <div id="header">
+			    <ul>
+				    <li><a href="#">Gmail</a></li> 
+				    <li><a href="#">Images</a></li>
+				    <li><a href="#"><img src="images/bars.png"></a></li>
+				    <li id="pcs"><a href="#"><img src="images/pp3.PNG"></a></li>
+			    </ul>
+		    </div>
+<!--the begiining of google logo, searchtextfield,mic and search icon-->
+            <div id="content">
+                    <div id="logo"><img src="images/google.png"/>
+                    </div>
+                    <div style="position: relative; margin: 25px 0px;">
+                            <input id="searchBox">
+                            <div><img src="images/search.png" id="srch"></div>
+                            <div><img src="images/mic.png" id="mic"></div>    
+                    </div>
+<!--the end of div content-->
+
+                </div>    
+                <div id="button-box">
+                    <button>Google Search</button>
+                    <button>I'm Feeling Lucky</button>
+                </div>
+
+        <!-- buttons div ends-->
+
+<!--starting of languages div -->
+                <div>
+                    <ul id="languages">
+                        <li>Google offered in:</li>
+                        <li><a href="#">Hausa</a></li>
+                        <li><a href ="#">Igbo</a></li>
+                        <li><a href="#">Ede Yoruba</a></li>
+                        <li><a href ="#">Nigerian Pidgin</a></li>
+                    </ul>
+                </div>
+            </div>
+<!--end languages div-->
+
+<!--start of footer-->
+
+            <div id="footer">
+                <div id="footer-top"> 
+                    <p id="Country">Nigeria</p>
+                </div>
+       
+                <div id="footer-bottom">
+                    <div id="left">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href ="#">Advertising</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href ="#">How to Search works</a></li>
+                       </ul>
+                    </div>
+            
+                    <div id="mid">
+                        <ul>
+                            <li>
+                                <img src="images/carbon.PNG"><a href="#">Carbon neutral since 2007</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="right">
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href ="#">Terms</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div> 
+                </div>
+
+            </div>
+
+	    </div>
+
+    </body>
+</html>

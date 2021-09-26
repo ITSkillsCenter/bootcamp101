@@ -18,7 +18,6 @@ Version: 01
 html {
   box-sizing: border-box;
   font-size: 50%;
-  color: blue;
   text-rendering: optimizeSpeed;
 }
 html,

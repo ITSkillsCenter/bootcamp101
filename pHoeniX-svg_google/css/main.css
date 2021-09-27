@@ -1,0 +1,328 @@
+/*!Theme Name:
+Theme URI: https://phoenix-svg.github.io/google-homepage-clone/
+Repository: https://github.com/pHoeniX-svg/google-homepage-clone
+Description: Google Homepage Clone
+Author's Name: Chukwuzube Samuel
+Author's Moniker: pHoeniX-svg
+Version: 01
+*/
+
+:root {
+  --clr-bg-100: hsl(228, 100%, 99%);
+  --clr-txt-100: #1f2023;
+  --clr-link: hsl(245, 86%, 36%); /* #8ab4f8 */
+  --ff-primary: Arial, Helvetica, sans-serif;
+  --br: 0.4rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+  text-rendering: optimizeSpeed;
+}
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--clr-bg-100);
+  color: var(--clr-txt-100);
+  font-family: var(--ff-primary);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+/* Inherit fonts for inputs and buttons */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  outline: none;
+}
+
+/* Flow Utility */
+.u-flow {
+  --flow-space: 1em;
+}
+.u-flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ////////////////////////////////////////////
+// COMPONENTS
+*/
+
+/*========= BUTTON STYLES =========*/
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: var(--br);
+  outline: none;
+  color: currentColor;
+  font: inherit;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn:hover,
+.btn:active {
+  transform: scale(0.95);
+}
+
+a.btn-primary {
+  padding: 0.5rem 1.2rem;
+  color: white;
+  background-color: hsla(233, 96%, 53%, 0.6);
+  text-decoration: none;
+}
+
+.btn-submit {
+  margin: 1.8rem 0.5rem;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid hsl(210, 17%, 98%);
+  color: hsl(206, 6%, 25%);
+  background-color: hsl(210, 17%, 98%);
+}
+.btn-submit:hover {
+  border: 1px solid hsl(220, 9%, 87%);
+  color: hsl(225, 6%, 13%);
+  /* background-color: hsl(210, 17%, 98%); */
+  box-shadow: 0 1px 1px rgb(0, 0, 0, 10%);
+}
+.btn-submit:focus {
+  border: 1px solid hsl(217, 89%, 61%);
+}
+
+/*========= MENU STYLES =========*/
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+}
+.menu a:hover {
+  border-radius: 50%;
+  background-color: hsla(213, 5%, 39%, 0.1);
+}
+.menu-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: hsl(213, 5%, 39%);
+  opacity: 1;
+}
+
+/*========= NAV STYLES =========*/
+.google-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+}
+.google-nav__links {
+  display: flex;
+  align-items: center;
+}
+.google-nav__link {
+  padding: 0.4rem 0.6rem;
+}
+
+/*========= FORM STYLES =========*/
+.search-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(225, 6%, 13%);
+}
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  width: 50rem;
+  max-width: 100%;
+  padding: 1rem 3.5rem;
+  border: 1px solid hsl(220, 10%, 89%);
+  border-radius: 2.4rem;
+}
+.search-input:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px hsla(225, 6%, 13%, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+.search-input:focus {
+  outline: none;
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  vertical-align: middle;
+}
+.search-icon .icon {
+  fill: hsl(210, 6%, 63%);
+}
+[class$='-icon'] {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1.5rem;
+  color: hsla(213, 5%, 39%, 0.5);
+}
+.search-icon {
+  left: 0;
+}
+.voice-icon {
+  right: 0;
+}
+
+/* ////////////////////////////////////////////
+// LAYOUT
+*/
+
+/*========= HEADER SECTION =========*/
+.google-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.google-header__showcase {
+  align-self: center;
+  justify-self: flex-end;
+  margin-top: 12.3rem;
+}
+
+/*========= LANGUAGE SECTION =========*/
+.google-languages {
+  font-size: 1.3rem;
+  text-align: center;
+}
+a.language-link {
+  color: var(--clr-link);
+}
+
+/*========= FOOTER SECTION =========*/
+.google-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(210, 4%, 46%);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.google-footer > * {
+  padding: 1.3rem 2.5rem;
+}
+
+.country {
+  border-bottom: 1px solid hsl(220, 9%, 87%);
+  font-size: 1.5rem;
+}
+
+.google-footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.google-footer__nav > * {
+  display: flex;
+  align-items: center;
+}
+
+.carbon > * {
+  margin-left: 0.5rem;
+}
+
+.footer-links:not(.last) {
+  padding-right: 2em;
+}
+
+/* ////////////////////////////////////////////
+// MEDIA QUERIES
+*/
+
+@media (min-width: 37.5em) and (max-width: 56.24em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (min-width: 56.25em) and (max-width: 112.49em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}

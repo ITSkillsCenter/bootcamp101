@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Google Practice</title>
+
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 0px 4px 0px 4px;
+      text-decoration: none;
+    }
+
+    ul li a {
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    #first-box {
+      text-align: right;
+    }
+
+    #google {
+      text-align: center;
+      margin-top: 22px;
+    }
+
+    #first-box img {
+      border-radius: 50%;
+      max-width: 72%;
+    }
+
+    #search-div {
+      text-align: center;
+      padding-top: 25px;
+      position: relative;
+    }
+
+    input#input {
+      border: 1px solid #ccc;
+      box-shadow: 0px 10px 4px -10px;
+      border-radius: 40px;
+      width: 51%;
+      height: 43px;
+    }
+
+    #mic {
+      position: absolute;
+      right: 342px;
+      top: 38px;
+    }
+
+    #btn-div {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    #search {
+      position: absolute;
+      left: 350px;
+      top: 38px;
+    }
+
+    .btn {
+      border: none;
+      background-color: #f3f3f3;
+      padding: 5px 27px;
+      color: #312e2e;
+    }
+
+    #left,
+    #middle,
+    #right {
+      display: inline-block;
+    }
+
+    div#footer-top {
+      background: #f5efef;
+      border-bottom: 1px solid;
+    }
+
+    div#footer-bottom {
+      background: #f5efef;
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    div#right {
+      padding-left: 152px;
+      margin: 2px;
+    }
+    #middle:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="first-box">
+    <ul>
+      <li><a href="">Gmail</a></li>
+      <li><a href="">Images </a></li>
+      <li> <i class="fa fa-bars"> </i></li>
+      <li><img src="profile.png"></li>
+    </ul>
+  </div>
+
+  <div id="google">
+    <img src="google.png" alt="">
+  </div>
+
+  <div id="search-div">
+    <i class="fa fa-search" id="search"></i>
+    <input type="text" id="input">
+    <i class="fa fa-microphone" id="mic"></i>
+  </div>
+  <div id="btn-div">
+    <button class="btn">Google Search</button>
+    <button class="btn">I'm Feeling Lucky</button>
+  </div>
+
+  <div style="text-align: center; padding-top: 15px;">
+    <ul style="font-size: 14px;" id="lang-list">
+      <li>Google Offered in:</li>
+      <li><a href="">Hausa</a></li>
+      <li><a href="">Igbo</a></li>
+      <li><a href="">Ede Yoruba</a></li>
+      <li><a href="">Nigerian Pidgin</a></li>
+    </ul>
+  </div>
+  <footer id="footer">
+    <div id="footer-top">
+      <p>Nigeria</p>
+    </div>
+    <div id="footer-bottom">
+      <div id="left">
+        <ul>
+          <li>About</li>
+          <li>Advertising</li>
+          <li>Business</li>
+          <li>How Search works</li>
+        </ul>
+      </div>
+      <div id="middle">
+        <img src="carbon.png" alt="">
+        <a href="" style="text-decoration: none;" id="carbon">Carbon neutral since 2007</a>
+      </div>
+      <div id="right">
+        <ul>
+          <li>Privace</li>
+          <li>Terms</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

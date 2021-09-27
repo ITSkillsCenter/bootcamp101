@@ -24,11 +24,11 @@
     font-size:24px;
 }
 #leftdiv {
-    padding: 0px 61px;
+    padding: 45px 0px;
 }
 
 #rightdiv {
-    padding: 2px 66px;
+    padding: 2px 0px;
 }
 #upper-li li{
     list-style-type: none;
@@ -74,4 +74,10 @@ color: #6b6565;
 #brd {
     border-bottom: 1px solid #b5a8a8;
     margin: 0px 440px;
+}
+.row{
+    
+    margin-right: -110px;
+    margin-left: -63px;
+
 }

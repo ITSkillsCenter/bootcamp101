@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: darkslateblue;
+    color: white;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#section-1 .container {
+    margin-top: 3%;
+    width: 55%;
+}
+
+#section-1 .login-btn a {
+    color: white;
+}
+
+#section-1 a {
+    color: darkslateblue;
+}
+
+#section-1 .image1 img {
+    width: 450px;
+    height: 600px;
+}
+
+#section-1 .image2 img {
+    width: 240px;
+    height: 420px;
+    margin-top: -151%;
+    margin-left: 36.3%;
+}
+
+#section-1 .form .icon {
+    text-align: center;
+}
+
+#section-1 .form {
+    margin-top: 8%;
+    width: 80%;
+}
+
+#section-1 .form .icon {
+    margin: 15px 0;
+}
+
+#section-1 form {
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    padding: 0 35px;
+    background-color: white;
+}
+
+#section-1 form .login-btn {
+    text-align: center;
+}
+
+#section-1 form input {
+    height: 40px;
+    background-color: whitesmoke;
+}
+
+#section-1 .sign-up {
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: white;
+}
+
+#section-1 .download {
+    text-align: center;
+}
+
+#section-1 .alternative {
+    background-color: white;
+    text-align: center;
+    width: 20%;
+    margin: -25px auto 0 auto;
+}
+
+#section-1 .facebook-login {
+    display: flex;
+    justify-content: center;
+}
+
+#section-1 .facebook-login .facebook-text {
+    margin-left: 10px;
+}
+
+#section-1 small {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#section-1 .facebook-login img {
+    width: 25px;
+    height: 25px;
+}
+
+#section-1 .download-options {
+    display: flex;
+    justify-content: center;
+}
+
+#section-1 .download-options img {
+    height: 35px;
+    width: 120px;
+    margin: 0 5px;
+}
+
+
+/* FOOTER SECTION */
+
+#my-footer {
+    width: 55%;
+    margin: 0 auto;
+}
+
+#my-footer ul {
+    text-align: center;
+}
+
+#my-footer li {
+    list-style: none;
+    display: inline-block;
+}
+
+#my-footer li a {
+    font-size: 12px;
+    padding: 0 2px;
+    text-decoration: none;
+    color: gray;
+    opacity: 0.9;
+}
+
+#my-footer .lower-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: gray;
+    opacity: 0.9;
+}

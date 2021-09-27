@@ -1,0 +1,77 @@
+.upper {
+    padding: 140px 362px;
+    background: #f3f3f3;
+}
+
+#accountbtn{
+   background-color: #1bb11b;;
+}
+
+#card{
+    border-radius: 6px;
+    box-shadow: 3px 10px 13px -12px;
+}
+
+#pgraph{
+    text-align: center;
+}
+#pgraph a{
+    color: black;
+    font-weight: bold;
+}
+
+#pgraph2{
+    font-size:24px;
+}
+#leftdiv {
+    padding: 0px 61px;
+}
+
+#rightdiv {
+    padding: 2px 66px;
+}
+#upper-li li{
+    list-style-type: none;
+    display: inline-block;
+}
+#upper-li{
+    text-align: center;
+    margin-right: 221px;
+}
+#middle-li li{
+    list-style-type: none;
+    display: inline-block;
+}
+#middle-li{
+    text-align: center;
+    margin-right: 145px;
+}
+#bottom-li li{
+    list-style-type: none;
+    display: inline-block;
+}
+#bottom-li{
+    text-align: center;
+    margin-right: 8px;
+}
+#fb-bottom{
+    list-style-type: none;
+    margin-left: 446px;
+}
+#bottom-li li a{
+color: #6b6565;
+}
+#middle-li li a{
+color: #6b6565;
+}
+#upper-li li a{
+color: #6b6565;
+}
+
+.lower {
+    padding-top: 32px;
+}
+#brd {
+    border-bottom: 1px solid #b5a8a8;
+    margin: 0px 440px;
+}

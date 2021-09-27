@@ -1,0 +1,94 @@
+.upper {
+    padding: 140px 362px;
+    background: #f3f3f3;
+}
+
+#accountbtn{
+   background-color: #1bb11b;;
+}
+
+#card{
+    border-radius: 0px;
+    box-shadow: 3px 10px 13px -12px;
+}
+
+#pgraph{
+    text-align: center;
+}
+#pgraph a{
+    color: black;
+    font-weight: bold;
+}
+
+#pgraph2{
+    font-size:24px;
+}
+#leftdiv {
+    padding: 45px 0px;
+}
+
+#rightdiv {
+    padding: 2px 0px;
+}
+#upper-li li{
+    list-style-type: none;
+    display: inline-block;
+}
+/* #upper-li{
+    text-align: center;
+    margin-right: 221px;
+} */
+#middle-li li{
+    list-style-type: none;
+    display: inline-block;
+}
+#middle-li{
+    text-align: center;
+    margin-right: 23px;
+}
+#bottom-li li{
+    list-style-type: none;
+    display: inline-block;
+}
+#bottom-li{
+    text-align: center;
+    margin-right: 8px;
+    color: #6b6565;
+}
+#fb-bottom{
+    list-style-type: none;
+    margin-left: 446px;
+}
+#bottom-li li a{
+color: #6b6565;
+}
+#middle-li li a{
+color: #6b6565;
+}
+#upper-li li a{
+color: #6b6565;
+}
+
+/* .lower {
+    padding-top: 32px;
+} */
+#brd {
+    border-bottom: 1px solid #b5a8a8;
+    margin: 0px 440px;
+}
+.row {
+    margin-right: -110px;
+    margin-left: -63px;
+    margin: 0 auto;
+    width: 135%;
+    padding: 73px 0;
+}
+
+.btn-primary {
+    background-color: #99caff;
+    border-color: #e9e9ff;
+}
+
+#lower2{
+    background: #f3f3f3;
+}

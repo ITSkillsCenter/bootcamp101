@@ -168,10 +168,8 @@ p.neutral{
     min-width: 30%;
 }
 .footer-links ul li a, .location p, p.neutral span a{
-
     color: #5f6368;
     font-size: 1.4rem;
-} solid #1a73e8;
 }
 @media screen  and (max-width: 500px){
     body{

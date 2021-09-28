@@ -1,0 +1,156 @@
+/* Initialization */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body */
+
+.content {
+	padding-top: 100px;
+	background-color: #f0f2f5;
+}
+.row {
+	width: 100%;
+}
+
+.col1 {
+	padding: 100px 20px 100px 180px;
+}
+.col1 p {
+	font-size: 28px;
+}
+
+.col2 {
+	padding: 0px 180px 100px 80px;
+}
+.card-container {
+	padding: 0px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 1px 15px 20px -21px;
+}
+
+.card-container a {
+	text-align: center;
+	font-size: 14px;
+}
+
+#CreatePage {
+	font-size: 14px;
+}
+#createPage a {
+	color: #000;
+	font-weight: 600;
+}
+
+.form-card {
+	display: flex;
+	flex-direction: column;
+}
+.form-card input {
+	padding: 14px;
+	border-radius: 4px;
+	border: 1px solid rgb(228, 227, 227);
+}
+
+#LogIn {
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#button-createAccount {
+	margin: 10px auto;
+	background-color: #42b72a;
+	padding: 10px;
+	font-weight: bold;
+}
+
+/* footer section */
+
+.footer {
+	background-color: #fff;
+	margin: 0 180px 10px 180px;
+	color: #8a8d91;
+}
+.footer-head {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-head ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	font-size: 12px;
+}
+
+.footer-head li {
+	padding: 30px 12px 0px 0;
+}
+
+.footer-head button {
+	width: 30px;
+	height: 20px;
+	margin: 30px 12px 0px 0;
+	background-color: #fff;
+	border: 1px solid #a3a3a3;
+	border-radius: 2px;
+}
+
+#plus {
+	font-size: 16px;
+	font-weight: bold;
+	color: #5a5a5a;
+	padding: 0;
+	margin: 0;
+}
+
+hr {
+	margin: 0;
+	padding: 0 0 15px;
+}
+
+.footer-body ul {
+	width: 20px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 12px;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.footer-body li {
+	padding: 0px 20px 0px 0px;
+}
+
+li img {
+	position: absolute;
+	top: -1px;
+	width: 18px;
+	height: 18px;
+}
+
+#footer-50 {
+	margin: 0;
+	width: 50px;
+}
+
+#footer-80 {
+	margin: 0;
+	width: 80px;
+}
+#footer-voting {
+	margin: 0;
+	width: 150px;
+}
+
+/* facebook copyright */
+.footer-tail p {
+	margin-top: 50px;
+	font-size: 11px;
+}

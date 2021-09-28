@@ -1,0 +1,326 @@
+/*!Theme Name:
+Theme URI: https://phoenix-svg.github.io/facebook-homepage-clone
+Repository: https://github.com/pHoeniX-svg/facebook-homepage-clone
+Description: Facebook Homepage Clone
+Author's Name: Chukwuzube Samuel
+Author's Moniker: pHoeniX-svg
+Version: 01
+*/
+
+:root {
+  --clr-bg-100: hsl(216, 20%, 95%);
+  --clr-bg-200: hsla(0, 0%, 0%, 0);
+  --clr-bg-300: hsl(110, 63%, 44%);
+  --clr-bg-400: hsl(214, 89%, 52%);
+  --clr-txt-100: hsl(214, 3%, 55%);
+  --clr-txt-200: hsl(216, 8%, 12%);
+  --clr-txt-300: hsl(220, 6%, 59%);
+  --clr-txt-400: hsl(220, 17%, 14%);
+  --clr-txt-500: hsl(225, 6%, 13%);
+  --ff-primary: 'Poppins', Arial, Helvetica, sans-serif;
+  --br: 0.6rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+  text-rendering: optimizeSpeed;
+}
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--clr-bg-100);
+  font-family: var(--ff-primary);
+  font-size: 1.2rem;
+  line-height: 1.34;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+/* Inherit fonts for inputs and buttons */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  outline: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ////////////////////////////////////////////
+// TYPOGRAPHY
+*/
+.heading-primary {
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 3.2rem;
+}
+.create-page {
+  font-weight: bold;
+}
+a.forgot-password {
+  color: var(--clr-bg-400);
+  font-size: 1.4rem;
+  text-align: center;
+}
+::placeholder {
+  font-size: 1.2rem;
+}
+/* ////////////////////////////////////////////
+// COMPONENTS
+*/
+
+/*========= LOGO STYLES =========*/
+.logo {
+  height: 10rem;
+  margin-left: -2.8rem;
+}
+
+/*========= BUTTON STYLES =========*/
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: var(--br);
+  outline: none;
+  color: currentColor;
+  font: inherit;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn:hover,
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-login,
+.btn-new {
+  padding: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+.btn-login {
+  background-color: var(--clr-bg-400);
+  font-size: 1.7rem;
+}
+.btn-new {
+  align-self: center;
+  width: 68%;
+  background-color: var(--clr-bg-300);
+  font-size: 1.4rem;
+}
+
+/*========= FORM STYLES =========*/
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 2rem;
+  padding-bottom: 2.3rem;
+  border-radius: var(--br);
+  background-color: #ffffff;
+  font-size: 1.7rem;
+  box-shadow: 2px 6px 15px 0px rgb(0, 0, 0, 0.12);
+}
+
+.input-element {
+  padding: 1.5rem;
+  border: 1px solid var(--clr-txt-300);
+  border-radius: var(--br);
+}
+.input-element:focus {
+  border: 1px solid var(--clr-bg-400);
+}
+
+/* ////////////////////////////////////////////
+// LAYOUT
+*/
+main {
+  padding: 10rem 0;
+}
+.section__overview {
+  margin-right: 2rem;
+}
+.section__account {
+  align-self: center;
+}
+.footer-container {
+  background-color: #ffffff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0;
+  background-color: #ffffff;
+  color: var(--clr-txt-100);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content > .languages {
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--clr-txt-300);
+}
+
+/* ////////////////////////////////////////////
+// UTILITIES
+*/
+
+/*========= CONTAINER =========*/
+.u-container {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/*========= FLEX =========*/
+.u-row {
+  display: flex;
+  align-items: center;
+  max-width: 110rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.u-row > * {
+  width: 80% !important;
+}
+.u-row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.u-row .u-col {
+  width: calc((100% - 2rem) / 2);
+}
+
+/*========= FLOW CONTENT =========*/
+.u-flow {
+  --flow-space: 1em;
+}
+.u-flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* ////////////////////////////////////////////
+// MEDIA QUERIES
+*/
+
+/*========= RESPONSIVE FONT SIZE =========*/
+@media (min-width: 37.5em) and (max-width: 56.24em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (min-width: 56.25em) and (max-width: 112.49em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*========= MOBILE RESPONSIVE  =========*/
+@media (max-width: 37.5em) {
+  .logo {
+    margin: 0;
+  }
+  .heading-primary {
+    font-size: 2.5rem;
+  }
+  ::placeholder {
+    font-size: 1.4rem;
+  }
+
+  .u-row {
+    flex-direction: column;
+  }
+  .u-row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+  .form {
+    width: 100%;
+  }
+  .section__overview {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .footer {
+    position: initial;
+  }
+}
+
+@media (max-width: 20em) {
+  .u-row > * {
+    width: 100% !important;
+  }
+}

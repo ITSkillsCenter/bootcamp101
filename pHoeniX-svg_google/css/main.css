@@ -239,6 +239,7 @@ a.btn-primary {
 }
 .voice-icon {
   right: 0;
+  cursor: pointer;
 }
 
 /* ////////////////////////////////////////////

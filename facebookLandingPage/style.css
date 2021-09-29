@@ -1,0 +1,70 @@
+img#logo {
+    width: 270px;
+}
+
+p#sub {
+    padding: 0 24px;
+    font-size: 20px;
+}
+
+div.card-body.text-center {
+    box-shadow: 2px 3px 5px -3px;
+    border-radius: 5px;
+}
+
+div.content {
+    background: #f0f0f0;
+    margin: 0 auto;
+    
+}
+
+div.row {
+    padding: 70px 301px;
+}
+
+p#box-label {
+    text-align: center;
+}
+
+p#box-label a {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+div#footer {
+    width: 64%;
+    margin: 0 auto;
+}
+
+div#footer li {
+    list-style-type: none;  
+    display: inline-block;  
+    padding: 0 5px;
+    font-size: 11px;
+}
+
+div#footer li a { 
+    color: #b5b3b3;       
+}
+
+div#footer ul {
+        margin-top: -5px;
+        margin-bottom: 0rem;
+}
+
+div.top-footer {
+    padding-top: 16px;
+    margin-bottom: -14px;
+}
+
+div.middle-footer {
+    margin-top: -13px;
+}
+
+div.bottom-footer {
+    padding-top: 9px;
+    padding-left: 44px;
+    font-size: 11px; 
+    color: #b5b3b3; 
+}

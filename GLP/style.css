@@ -1,0 +1,171 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./images/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    padding: 0px 10px;
+    vertical-align: middle;
+}
+
+#header a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#header a:hover{
+    text-decoration: underline;
+}
+
+#header{
+    text-align: right;
+
+}
+
+#header img{
+    border-radius: 50%;
+    width: 40px;
+}
+
+#logo img{
+    width: 272px;
+}
+
+#content {
+    width: 43%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#searchbox{
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    width: 90%;
+    height: 42px;
+    padding: 0 30px;
+    box-shadow: 0px 0px 10px rgba(0px, 10px, 40px, -27px);
+}
+
+#mic {
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+#searchicon{
+    position: absolute;
+    left: 14px;
+    font-size: 14px;
+    color: #ccc;
+    top: 16px;
+}
+
+#buttonbox{
+    text-align: center;
+    position: relative;
+    margin: 30px 0px;
+}
+
+button{
+    background-color: #f7f5f5;
+    border: 0px;
+    border-radius: 2px;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #6f6d6d;
+    border-radius: 3px;
+    margin: 5px 5px;
+}
+
+button:hover{
+    border: 1px solid rgb(201, 199, 199);
+}
+
+#lang{
+    text-align: center;
+}
+
+#lang li{
+    font-size: 14px;
+    padding: 0px 4px;
+}
+
+#lang a{
+    text-decoration: none;
+    color: #1A0DAB;
+}
+
+#lang a:hover{
+    text-decoration: underline;
+}
+
+#middle a{
+    font-size: 12px;
+}
+
+#footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer li, a{
+    font-size: 14px;
+    color: #6f6d6d;
+}
+
+#footer a{
+    text-decoration: none;
+}
+
+#footer-bottom a:hover{
+    text-decoration: underline;
+}
+
+#left, #middle, #right{
+    display: inline-block;
+}
+
+#footer-top{
+    background-color: #f0f0f0;
+    padding: 0px, 12px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+#footer-top li{
+    padding: 9px 12px;
+}
+
+#footer-bottom{
+    background-color: #f0f0f0;
+    padding: 0px, 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    height: 50px;
+}
+
+#left{
+    position: absolute;
+    left: 0;
+}
+
+#right{
+    position: absolute;
+    right: 0;
+}
+
+#middle img{
+    width: 30px;
+    border-radius: 100%;
+}
+

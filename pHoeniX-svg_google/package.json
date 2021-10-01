@@ -1,0 +1,13 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "devserver": "live-server --port=3000 --host=0.0.0.0",
+    "start": "npm-run-all --parallel devserver"
+  },
+  "author": "pHoeniX-svg",
+  "license": "ISC"
+}

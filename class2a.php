@@ -1,6 +1,9 @@
 
 <?php
 
+$username ='ope';
+$password = 'james';
+
 function area($b, $h){
   $result = 1/2*($b*$h);
   return $result;

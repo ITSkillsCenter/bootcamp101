@@ -1,5 +1,10 @@
 <?php
 
+function payslip(){
+
+
+}
+
 // function add_two_numbers($a, $b ){
 
 //  return $a + $b;
@@ -98,14 +103,16 @@ if (isset($_POST['submit'])) {
     </table>
     */ ?>
 
-    <?php foreach ($csvAsArray as $k=>$r) { 
+    <?php 
+    if(isset($csvAsArray)){
+    foreach ($csvAsArray as $k=>$r) { 
         if($k > 0){
       ?>
-      <div class="payslip">
+      <div class="payslip">`
         <div class="left">
           <h3>Employer's Name: <?php echo $r[4]; ?> </h3>
           <h3>Employee's Name: <?php echo $r[1]; ?> </h3>
-          <h3>Gross Pay: <?php echo $r[2] * $r[3]; ?> </h3>
+          <h3>Gross Pay: <?php echo payslip($r[2] * $r[3]); ?> </h3>
         </div>
 
         <div class="right">
@@ -114,7 +121,7 @@ if (isset($_POST['submit'])) {
         </div>
 
       </div>
-    <?php }} ?>
+    <?php }}} ?>
 
   </div>
 </body>
